@@ -1,0 +1,13 @@
+*{box-sizing:border-box;font-family:"Inter",system-ui,sans-serif;}
+body{margin:0;padding:20px;background:radial-gradient(circle at top,#1e1b4b,#0f1023);color:#e0e7ff;}
+.app{max-width:900px;margin:auto;display:flex;flex-direction:column;gap:25px;}
+.app__header h1{text-align:center;margin:0;}
+.app__tagline{text-align:center;color:#a5b4fc;}
+.card{background:rgba(255,255,255,0.07);padding:18px;border-radius:16px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.15);}
+.btn{background:#312e81;border:1px solid #4338ca;color:white;padding:8px 14px;border-radius:8px;cursor:pointer;}
+.btn--primary{background:#16a34a;border-color:#22c55e;}
+.btn--danger{background:#dc2626;border-color:#f87171;}
+.btn--glow{box-shadow:0 0 12px #818cf8;}
+.gradient-preview{border-radius:12px;border:1px solid rgba(255,255,255,0.2);min-height:200px;margin-top:10px;position:relative;}
+.gradient-preview__label{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,0.4);padding:4px 10px;border-radius:6px;}
+.code-block{background:rgba(0,0,0,0.3);padding:10px;border-radius:10px;margin-top:10px;color:#c7d2fe;}
