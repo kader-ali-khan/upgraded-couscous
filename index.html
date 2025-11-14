@@ -13,44 +13,77 @@
       <p class="app__tagline">Click, explore, break things (gently).</p>
     </header>
 
+    <!-- Random Idea -->
     <section class="card card--idea">
       <h2>💡 Random Idea Generator</h2>
-      <p id="idea-text" class="idea__text">Loading your next million-dollar idea...</p>
+      <p id="idea-text" class="idea__text">
+        Loading your next million-dollar idea...
+      </p>
       <div class="card__footer">
         <button id="new-idea-btn" class="btn">New Idea</button>
         <button id="easter-btn" class="btn btn--glow">Easter Egg 🥚</button>
       </div>
     </section>
 
+    <!-- Gradient Lab -->
     <section class="card card--gradient">
-      <div>
+      <div class="gradient-settings">
         <h2>🎨 Gradient Lab</h2>
         <p class="card__subheader">Pick colors, twist angles, copy CSS.</p>
+
         <div class="controls">
-          <label class="field"><span>Color A</span><input type="color" id="color-a" value="#ff8a00" /></label>
-          <label class="field"><span>Color B</span><input type="color" id="color-b" value="#ff2d95" /></label>
+          <label class="field">
+            <span class="field__label">Color A</span>
+            <input type="color" id="color-a" value="#ff8a00" />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Color B</span>
+            <input type="color" id="color-b" value="#ff2d95" />
+          </label>
+
           <label class="field field--full">
-            <span>Angle: <span id="angle-value">90°</span></span>
+            <div class="field__label-row">
+              <span class="field__label">Angle</span>
+              <span id="angle-value" class="field__value">90°</span>
+            </div>
             <input type="range" id="angle" min="0" max="360" value="90" />
           </label>
-          <button id="random-gradient-btn" class="btn">Random Gradient 🎲</button>
-          <button id="copy-css-btn" class="btn btn--primary">Copy CSS 📄</button>
-          <pre id="css-output" class="code-block">background: linear-gradient(90deg, #ff8a00, #ff2d95);</pre>
+
+          <div class="controls__row">
+            <button id="random-gradient-btn" class="btn">
+              Random Gradient 🎲
+            </button>
+            <button id="copy-css-btn" class="btn btn--primary">
+              Copy CSS 📄
+            </button>
+          </div>
+
+          <pre id="css-output" class="code-block">
+background: linear-gradient(90deg, #ff8a00, #ff2d95);
+          </pre>
         </div>
       </div>
+
       <div id="gradient-preview" class="gradient-preview">
         <span class="gradient-preview__label">Live Preview</span>
       </div>
     </section>
 
+    <!-- Chaos Mode -->
     <section class="card card--chaos">
       <h2>⚡ Chaos Mode</h2>
       <p class="card__subheader">Click to unleash pure randomness.</p>
-      <button id="chaos-btn" class="btn btn--danger">Activate Chaos</button>
+      <button id="chaos-btn" class="btn btn--danger">
+        Activate Chaos
+      </button>
     </section>
 
-    <footer class="app__footer">Built with 🎉 for upgraded-couscous — have fun!</footer>
+    <footer class="app__footer">
+      Built with 🎉 for <strong>upgraded-couscous</strong> — have fun!
+    </footer>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
